@@ -46,7 +46,7 @@ class StoredContentManager
     {
         if (!this.entries.containsKey(entry.getKey()))
         {
-            this.entries.put(entry.getKey(), new ArrayList<>());
+            this.entries.put(entry.getKey(), new ArrayList<KademliaStorageEntryMetadata>());
         }
 
         /* If this entry doesn't already exist, then we add it */
